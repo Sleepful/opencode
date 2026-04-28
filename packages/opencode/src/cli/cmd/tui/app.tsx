@@ -608,6 +608,7 @@ function App(props: { onSnapshot?: () => Promise<string[]> }) {
     {
       title: mode() === "dark" ? "Switch to light mode" : "Switch to dark mode",
       value: "theme.switch_mode",
+      search: "toggle appearance",
       onSelect: (dialog) => {
         setMode(mode() === "dark" ? "light" : "dark")
         dialog.clear()

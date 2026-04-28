@@ -695,7 +695,7 @@ export class Agent implements ACPAgent {
         .list(
           {
             directory: params.cwd ?? undefined,
-            roots: true,
+            roots: "true",
           },
           { throwOnError: true },
         )
